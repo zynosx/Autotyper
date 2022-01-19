@@ -16,7 +16,8 @@ def typethetext(inputstring):
     time.sleep(randint(1,4))
 
 def randomiser():
-    shuffler_list = ["pls hunt","pls fish","pls dig","pls beg","pls dep max","pls search","pls hl"]
+    # shuffler_list = ["pls hunt","pls fish","pls dig","pls beg","pls dep max","pls search","pls hl"]
+    shuffler_list = ["pls hunt","pls fish","pls dig","pls beg","pls dep max"]
     random.shuffle(shuffler_list)
     # print(shuffler_list)
     for a in shuffler_list:
@@ -27,9 +28,10 @@ def randomiser():
 #starting the bot(main func)    
 st_time=time.time()
 hour = int(input("enter time (in):"))
-sec = hour * 60
+sec = hour * 60 * 60
 cur_time = time.time()
 elap_time = cur_time - st_time
+count = 0
 
 print(st_time)
 print(elap_time)
@@ -40,4 +42,6 @@ while not elap_time > sec:
     elap_time = cur_time - st_time
     time.sleep(1)
     randomiser()
+    count+=3
+    print("Running -"+"commands count"count)
     time.sleep(randint(46,49))
