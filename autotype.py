@@ -42,6 +42,6 @@ while not elap_time > sec:
     elap_time = cur_time - st_time
     time.sleep(1)
     randomiser()
-    count+=3
-    print("Running -"+"commands count"count)
+    count+=4
+    print("Running -","commands count",count)
     time.sleep(randint(46,49))
